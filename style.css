@@ -1,0 +1,64 @@
+form {
+	display: flex;
+	flex-direction: column;
+}
+.rosa {
+	background-color: pink;
+}
+#rojo {
+	color: red;
+}
+
+.titulo {
+	color: green;
+}
+
+div > h1 {
+	background-color: aqua;
+	margin: 10px;
+	border: 1px solid black;
+}
+.primero ~ li {
+	font-size: 30px;
+}
+button {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	margin: 15px;
+	font-size: 20px;
+}
+button:hover {
+	background-color: aqua;
+	transition: 2s;
+	border: none;
+	border-radius: 5px;
+}
+label {
+	display: block;
+}
+label:hover {
+	background-color: green;
+}
+a {
+	color: red;
+}
+a:visited {
+	color: orange;
+}
+a:active {
+	color: green;
+}
+a:focus {
+	color: violet;
+	border: 1px solid black;
+}
+input:checked {
+	margin: 30px;
+}
+input::placeholder {
+	color: Blue;
+	font-size: 18px;
+}
