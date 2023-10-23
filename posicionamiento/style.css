@@ -1,0 +1,23 @@
+.contenedor {
+	background-color: green;
+}
+.rojo {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
+.naranja {
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 100px;
+}
+.amarillo {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+}
+input {
+	border: none;
+}
