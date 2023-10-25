@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+.contenedor {
+	background-color: grey;
+	padding: 40px;
+}
+.main {
+	background-color: green;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+}
+.tarjeta {
+	height: 400px;
+	width: 200px;
+	border: 1px solid black;
+	margin: 20px;
+	position: relative;
+	left: 30px;
+}
+.rojo {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
