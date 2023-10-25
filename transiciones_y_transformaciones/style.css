@@ -3,13 +3,15 @@ body {
 }
 nav {
 	background-color: pink;
-	height: 100px;
+	height: 120px;
 	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 .contenedor {
 	background-color: grey;
-	padding: 40px;
+	padding-top: 120px;
+	height: 1500px;
 }
 .main {
 	background-color: green;
