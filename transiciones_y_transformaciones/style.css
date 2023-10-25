@@ -33,3 +33,16 @@ nav {
 	background-color: red;
 	/* position: fixed; */
 }
+.azul {
+	background-color: blue;
+	width: 100px;
+	height: 200px;
+	transition: 2s;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.azul:hover {
+	width: 300px;
+	transform: translate(15px, 20px);
+}
+/* la transicion siempre va en el elemento, NUNCA EN EL HOVER */
