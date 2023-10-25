@@ -1,13 +1,19 @@
 body {
 	margin: 0;
 }
+nav {
+	background-color: pink;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+}
 .contenedor {
 	background-color: grey;
 	padding: 40px;
 }
 .main {
 	background-color: green;
-	height: 600px;
+	height: 1600px;
 	display: flex;
 	justify-content: center;
 }
@@ -16,11 +22,12 @@ body {
 	width: 200px;
 	border: 1px solid black;
 	margin: 20px;
-	position: relative;
-	left: 30px;
+	/* position: relative;
+	left: 30px; */
 }
 .rojo {
 	height: 100px;
 	width: 100px;
 	background-color: red;
+	/* position: fixed; */
 }
