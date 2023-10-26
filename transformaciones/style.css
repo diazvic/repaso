@@ -1,0 +1,15 @@
+.tarjeta {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	transition: 2s;
+	padding: 20px;
+	border: 1px solid black;
+}
+/* .rojo:hover {
+	transform: translate(0px, 60px);
+} */
+.contenedor {
+	display: flex;
+	justify-content: space-around;
+}
