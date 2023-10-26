@@ -1,8 +1,7 @@
 .tarjeta {
-	background-color: red;
 	width: 200px;
 	height: 200px;
-	transition: 2s;
+	transition: 0.2s;
 	padding: 20px;
 	border: 1px solid black;
 }
@@ -12,4 +11,8 @@
 .contenedor {
 	display: flex;
 	justify-content: space-around;
+}
+.tarjeta:hover {
+	transform: translateY(50px);
+	transform: skew(30deg);
 }
