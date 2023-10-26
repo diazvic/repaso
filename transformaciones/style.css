@@ -14,5 +14,18 @@
 }
 .tarjeta:hover {
 	transform: translateY(50px);
-	transform: skew(30deg);
+	transform: skew(0, 30deg);
+	transform: scale(2);
+}
+.imagen {
+	margin: 20px;
+	overflow: hidden;
+}
+/* skew es para inclinar un elemento, se usan grados */
+/* scale crece en tamaño */
+.tarjeta img:hover {
+	transition: 2s;
+}
+.tarjeta img:hover {
+	transform: scale(2);
 }
