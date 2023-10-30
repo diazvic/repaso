@@ -14,3 +14,4 @@ console.log(otroNombre);
 // console.log(numero);
 // let numeroUno = "1";
 // console.log(numeroUno);
+console.log(`Hola mi nombre es ${nombre}`);
