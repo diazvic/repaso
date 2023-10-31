@@ -24,9 +24,10 @@ console.log("hola");
 // console.log(nombreCompleto);
 //Ejercicio
 
-// let gusto1 = prompt("Cual es el primer gusto?");
-// let gusto2 = prompt("Cual es el segundo gusto?");
-// let gusto3 = prompt("Cual es el tercer gusto?");
+let gusto1 = prompt("Cual es el primer gusto?");
+let gusto2 = prompt("Cual es el segundo gusto?");
+let gusto3 = prompt("Cual es el tercer gusto?");
 
-// let gustoCompleto = `Aqui tiene su helado de ${gusto1}, ${gusto2} y ${gusto3} `;
-// console.log(gustoCompleto);
+let gustoCompleto = `Aqui tiene su helado de ${gusto1}, ${gusto2} y ${gusto3} `;
+console.log(gustoCompleto);
+alert(gustoCompleto);
