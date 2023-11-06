@@ -30,3 +30,10 @@
 
 // console.log(gritar("Hola"));
 // console.log(gritar("Prueba"));
+
+//Defini una funcion obtenerNombreCompleto que reciba como argumento un nombre y un apellido y devuelva un string con la union de ambos valores
+let obtenerNombreCompleto = (nombre, apellido) => {
+	return `${nombre} ${apellido}`;
+};
+console.log(obtenerNombreCompleto("Victoria", "Diaz"));
+console.log(obtenerNombreCompleto("Euge", "Diaz"));
