@@ -1,0 +1,15 @@
+.verde {
+	color: green;
+}
+.subrayado {
+	text-decoration: underline;
+}
+.rojo {
+	color: red;
+}
+.azul {
+	color: blue;
+}
+.resaltado {
+	background-color: yellow;
+}

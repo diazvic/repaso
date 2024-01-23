@@ -4,7 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Introduccion al DOM</title>
-		<script src="index.js"></script>
+
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body></body>
+	<body>
+		<h1>Hola, soy el Dom</h1>
+		<p id="primer-parrafo">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad enim
+			reprehenderit amet quae. Eos, quibusdam. Eligendi ipsam quae earum harum
+			reiciendis suscipit dolor tenetur asperiores, totam amet quidem in?
+		</p>
+		<!-- DOM, lo que permite a los programadores manipular y modificar dinámicamente el 
+      contenido, la estructura y el estilo de un documento. -->
+		<p id="mensaje">Este es un mensaje de ejemplo.</p>
+		<div
+			id="miDiv"
+			style="width: 200px; height: 100px; background-color: #f0f0f0"
+		></div>
+
+		<button id="miBoton" onclick="cambiarEstilo()">Haz clic</button>
+		<ul id="miLista"></ul>
+
+		<button id="botonEvento">Haz clic para mostrar un mensaje</button>
+		<p id="mensajeEvento"></p>
+
+		<script src="index.js"></script>
+	</body>
 </html>
