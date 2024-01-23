@@ -1,0 +1,24 @@
+.card {
+	width: 200px;
+	height: 380px;
+	border: 1px solid black;
+	padding: 20px;
+}
+.rojo {
+	color: red;
+}
+
+.modal {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	display: none;
+}
+.modo-claro {
+	background-color: antiquewhite;
+	color: black;
+}
+.modo-oscuro {
+	background-color: black;
+	color: "fff";
+}
