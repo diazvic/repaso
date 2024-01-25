@@ -1,0 +1,8 @@
+.main {
+	background-color: pink;
+	color: white;
+}
+.tarjetas {
+	display: flex;
+	flex-wrap: wrap;
+}

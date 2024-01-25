@@ -1,0 +1,27 @@
+.verde {
+	border: none;
+	width: 50px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	margin: 20px;
+}
+.azul {
+	border: none;
+	width: 50px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	margin: 20px;
+}
+.rojo {
+	border: none;
+	width: 50px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	margin: 20px;
+}
