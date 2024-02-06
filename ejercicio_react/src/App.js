@@ -1,5 +1,13 @@
 import "./App.scss";
 import Card from "./components/Card";
+
+// Crear un nuevo proyecto de React
+// En App.js, copiar el array.
+// Por cada uno de los elementos del array, mostrar un componente <Card> que muestre las propiedades: title, type, price e img.
+// Estilar las tarjetas con scss, declarando un archivo llamado Card.scss, siguiendo el estilado sugerido o como más te guste.
+// Agregar dos props a cada componente Card: isAvailable y onSale.
+// Si isAvailable es false, el fondo de la tarjeta debe mostrarse en gris. (O cualquier otro estilado que prefieras, por ejemplo, la imagen puede tener un overlay gris, el titulo puede estar tachado, etc).
+// Si onSale es true, al lado del titulo debe aparecer un span que diga "ON SALE!
 const products = [
 	{
 		title: "Coombes",
@@ -69,7 +77,18 @@ const App = () => {
 	return (
 		<div>
 			<h1>Ejercicio</h1>
-			<Card title={products.title} />
+			{products.map((product) => (
+				<div key={product.title}>
+					<Card
+						title={product.title}
+						type={product.type}
+						price={product.price}
+						img={product.img}
+						isAvailable={product.isAvailable}
+						onSale={product.onSale}
+					/>
+				</div>
+			))}
 		</div>
 	);
 };

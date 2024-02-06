@@ -1,6 +1,6 @@
 .tarjeta {
-	width: 200px;
-	height: 320px;
+	width: 300px;
+	height: 346px;
 	margin: 0 0 5px;
 	font-family: Avenir;
 	font-size: 16px;
@@ -9,5 +9,14 @@
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	background-color: red;
+	img {
+		width: 100%;
+	}
+}
+.type {
+	color: #999a9e;
+	display: flex;
+}
+.false {
+	background-color: #999a9e;
 }
