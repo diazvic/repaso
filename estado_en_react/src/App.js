@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+//Estado - Eventos
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { useState } from "react";
+
+const App = () => {
+	const [contador, setContador] = useState(0);
+
+	const handleClickBotonMas = () => {
+		console.log("click");
+		setContador(contador + 1);
+	};
+
+	const handleClickBotonMenos = () => {
+		console.log("click");
+		setContador(contador - 1);
+	};
+	return (
+		<div>
+			<p>Contador: {contador}</p>
+			<button onClick={handleClickBotonMas}>+1</button>
+			<button onClick={handleClickBotonMenos}>-1</button>
+		</div>
+	);
+};
 
 export default App;
