@@ -9,7 +9,7 @@ const App = () => {
 	const [valorDelCheckbox, setValorDelCheckbox] = useState("NO");
 	const [valorDelPais, setValorDelPais] = useState("");
 	const [valorDelAnimal, setValorDelAnimal] = useState("");
-
+	const [mostrarModal, setMostrarModal] = useState("false");
 	const handleClickBotonMas = () => {
 		console.log("click");
 		setContador(contador + 1);
@@ -43,6 +43,12 @@ const App = () => {
 	const handleChangeAnimal = (e) => {
 		setValorDelAnimal(e.target.value);
 	};
+	const handleSubmit = (e) => {
+		e.preventDefault();
+	};
+	const handleClickMostrarModal = () => {
+		setMostrarModal(false);
+	};
 	return (
 		<div className={`container ${color}`}>
 			{/* <p>Contador: {contador}</p>
@@ -53,45 +59,56 @@ const App = () => {
 				Poner el fondo rojo
 			</button>
 			<button onClick={handleClickCambiarColor}>{color}</button> */}
-			<input type="text" name="nombre" onChange={handleChange} />
-			<p>Valor del input: {valorDelInput}</p>
-			<label>
-				Terminos y condiciones
-				<input type="checkbox" onChange={handleChangeCheckbox} />
-			</label>
-			<p>
-				Acepta terminos y condiciones: <span>{valorDelCheckbox}</span>
-			</p>
-			<label>
-				Pais
-				<select onChange={handleChangePais}>
-					<option value="argentina">Argentina</option>
-					<option value="brasil">Brasil</option>
-					<option value="chile">Chile</option>
-				</select>
-			</label>
-			<p>
-				Pais elegido: <span>{valorDelPais}</span>
-			</p>
-			<label>
-				<input
-					type="radio"
-					name="animal"
-					value="gato"
-					onChange={handleChangeAnimal}
-				/>
-				Gato
-				<input
-					type="radio"
-					name="animal"
-					value="perro"
-					onChange={handleChangeAnimal}
-				/>
-				Perro
-			</label>
-			<p>
-				Animal elegido: <span>{valorDelAnimal}</span>
-			</p>
+			<form onSubmit={handleSubmit}>
+				<input type="text" name="nombre" onChange={handleChange} />
+				<p>Valor del input: {valorDelInput}</p>
+				<label>
+					Terminos y condiciones
+					<input type="checkbox" onChange={handleChangeCheckbox} />
+				</label>
+				<p>
+					Acepta terminos y condiciones: <span>{valorDelCheckbox}</span>
+				</p>
+				<label>
+					Pais
+					<select onChange={handleChangePais}>
+						<option value="argentina">Argentina</option>
+						<option value="brasil">Brasil</option>
+						<option value="chile">Chile</option>
+					</select>
+				</label>
+				<p>
+					Pais elegido: <span>{valorDelPais}</span>
+				</p>
+				<label>
+					<input
+						type="radio"
+						name="animal"
+						value="gato"
+						onChange={handleChangeAnimal}
+					/>
+					Gato
+					<input
+						type="radio"
+						name="animal"
+						value="perro"
+						onChange={handleChangeAnimal}
+					/>
+					Perro
+				</label>
+				<p>
+					Animal elegido: <span>{valorDelAnimal}</span>
+				</p>
+				<button>Enviar</button>
+			</form>
+			{mostrarModal && (
+				<div>
+					<p>MODAL</p>
+					<div>
+						<button onClick={handleClickMostrarModal}>Cerrar Modal</button>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
