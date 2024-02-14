@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Card from "./components/Card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const [personajes, setPersonajes] = useState([]);
+	const [busqueda, setBusqueda] = useState("");
+	const [valorDelInput, setValorDelInput] = useState("");
+
+	console.log(personajes);
+	useEffect(() => {
+		fetch(`https://rickandmortyapi.com/api/character?name=${busqueda}`)
+			.then((res) => res.json())
+			.then((data) => setPersonajes(data.results));
+	}, [busqueda]);
+	const handleClickPersonajes = () => {
+		setBusqueda("character");
+	};
+	// const handleChange = (e) => {
+	// 	setValorDelInput(e.target.value);
+	// };
+	const handleClick = () => {
+		setBusqueda(valorDelInput);
+	};
+	return (
+		<div>
+			<div className="personajes-container">
+				<button onClick={handleClickPersonajes}>Buscar personajes</button>
+				<input type="text" />
+				<button onClick={handleClick}>Buscar</button>
+
+				{personajes.map((personaje) => (
+					<Card
+						key={personaje.name}
+						title={personaje.name}
+						img={personaje.image}
+					/>
+					//  <h3 key={personaje.name}>{personaje.name}</h3>
+				))}
+			</div>
+		</div>
+	);
+};
 
 export default App;
